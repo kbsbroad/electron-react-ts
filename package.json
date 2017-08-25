@@ -1,0 +1,11 @@
+{
+  "name": "electron-react-ts",
+  "version": "1.0.0",
+  "description": "A boilerplate for electron and react",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^3.5.5",
+    "webpack-merge": "^4.1.0"
+  }
+}
