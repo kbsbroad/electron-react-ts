@@ -1,12 +1,10 @@
-import path from 'path'
-import webpack from 'webpack'
-import { pathUtil } from './utils'
-
-const { root } = pathUtil
+const path = require('path')
+const webpack = require('webpack')
+const { fromRoot } = require('./utils')
 
 export default {
   output: {
-    path: root('dist'),
+    path: fromRoot('dist'),
     filename: '[name].bundle.js',
     libraryTarget: 'commonjs2'
   },
@@ -14,8 +12,8 @@ export default {
   resolve: {
     extensions: ['.ts', '.js', '.tsx', '.jsx'],
     modules: [
-      root('src'),
-      root('node_modules')
+      fromRoot('src'),
+      fromRoot('node_modules')
     ]
   },
 

@@ -1,7 +1,5 @@
-import path from 'path'
+const path = require('path')
 
-export const pathUtil = {
-  root(...args) {
-    return path.resolve(__dirname, '..', ...args)
-  }
+export const fromRoot = (...args) => {
+  return path.resolve(__dirname, '..', ...args)
 }
